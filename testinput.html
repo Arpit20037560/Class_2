@@ -7,14 +7,16 @@
     <script>
         let doIt=() =>
         {
-            inputText = document.getElementById("userInput").value;
-            alert("inputText");
+            let sinputText = document.getElementById("userInput").value;
+            let val = Number(inputText);
+            if(val > 15)
+            alert("It exceeds the limit of 15kg");
             
         } 
     </script>
 </head>
 <body>
     <input type="text" id="userInput">
-    <button onclick="doIt">Press Me!</button>
+    <button onclick="doIt">Check Baggage Weight!</button>
 </body>
 </html>
