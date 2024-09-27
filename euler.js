@@ -1,15 +1,23 @@
-
-let a = 3;
-let b = 5;
-
-
-let n = 1000;
-
-sum =0;
-for(let i=0;i<1000;i++)
+function calculateSum() 
 {
-    if(i%a==0 || i%b ==0)
-    sum+= i;
+
+    let inputText1 = document.getElementById("userInput1").value;
+    let inputText2 = document.getElementById("userInput2").value;
+    let inputText3 = document.getElementById("userInput3").value;
+
+    let a = Number(inputText1);
+    let b = Number(inputText2);
+    let n = Number(inputText3);
+
+    let sum = 0;
+    for (let i = 0; i < n; i++) 
+    {
+        if (i % a === 0 || i % b === 0) {
+            sum += i;
+        }
+    }
+
+    console.log(sum);
+    alert("Sum of all the multiples of " + a + " or " + b + " below " + n + " is " + sum);
+    document.getElementById("output").innerText = "Result: " + sum;
 }
-console.log(sum)
-alert("Sum of all the multiples of 3 or 5 below 1000 is"+sum);
