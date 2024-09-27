@@ -18,20 +18,25 @@
             let n = Number(inputText3);
 
             sum =0;
-            for(let i=0;i<1000;i++)
+            for(let i=0;i<n;i++)
             {
                     if(i%a==0 || i%b ==0)
                     sum+= i;
             }
-                console.log(sum)
+                console.log(sum);
                 alert("Sum of all the multiples of 3 or 5 below 1000 is "+sum);
                             
             } 
     </script>
 </head>
 <body>
+    <label for="userInput1">Enter number 1:</label>
     <input type="text" id="userInput1">
+
+    <label for="userInput2">Enter number 2:</label>
     <input type="text" id="userInput2">
+
+    <label for="userInput3">Upper Limit</label>
     <input type="text" id="userInput3">
     <button onclick="doIt()">Checking multiples!</button>
 </body>
