@@ -12,4 +12,4 @@ for(let i=0;i<1000;i++)
     sum+= i;
 }
 console.log(sum)
-alert(sum);
+alert("Sum of all the multiples of 3 or 5 below 1000 is"+sum);
