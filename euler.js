@@ -12,4 +12,4 @@ for(let i=0;i<1000;i++)
     sum+= i;
 }
 
-alert("Answer is sum");
+alert("Answer is sum",sum);
