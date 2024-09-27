@@ -7,16 +7,32 @@
     <script>
         let doIt=() =>
         {
-            let inputText = document.getElementById("userInput").value;
-            let val = Number(inputText);
-            if(val > 15)
-            alert("It exceeds the limit of 15kg");
+            let inputText1 = document.getElementById("userInput1").value;
+            let inputText2 = document.getElementById("userInput2").value;
+            let inputText3 = document.getElementById("userInput3").value;
             
-        } 
+            let a = Number(inputText1);
+            let b = Number(inputText2);
+
+
+            let n = Number(inputText3);
+
+            sum =0;
+            for(let i=0;i<1000;i++)
+            {
+                    if(i%a==0 || i%b ==0)
+                    sum+= i;
+            }
+                console.log(sum)
+                alert("Sum of all the multiples of 3 or 5 below 1000 is "+sum);
+                            
+            } 
     </script>
 </head>
 <body>
-    <input type="text" id="userInput">
+    <input type="text" id="userInput1">
+    <input type="text" id="userInput2">
+    <input type="text" id="userInput3">
     <button onclick="doIt()">Check Baggage Weight!</button>
 </body>
 </html>
