@@ -1,3 +1,9 @@
+
+//Demostrate some DOM manipulation in the exercise
+/*
+for example-
+changing the value of a result div,hiding inputs once the butoon is clicked..
+*/
 function calculateSum() 
 {
 
@@ -18,6 +24,7 @@ function calculateSum()
     }
 
     console.log(sum);
-    alert("Sum of all the multiples of " + a + " or " + b + " below " + n + " is " + sum);
     document.getElementById("output").innerText = "Result: " + sum;
+
+    document.getElementById("inputForm").style.display="none";
 }
