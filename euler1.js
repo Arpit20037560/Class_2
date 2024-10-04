@@ -33,9 +33,9 @@ function sum(a,l,b)
 {
     let ans =0;
     l.array.forEach(element => {
-        if(l%a ==0 || l%b ==0)
+        if(element%a ==0 || element%b ==0)
         {
-            ans+= l;
+            ans+= element;
         }
     });
 
