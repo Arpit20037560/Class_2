@@ -32,7 +32,7 @@ document.getElementById("output").innerText = "Sum of all the multiples of " + a
 function sum(a,l,b)
 {
     let ans =0;
-    l.array.forEach(element => {
+    l.forEach(element => {
         if(element%a ==0 || element%b ==0)
         {
             ans+= element;
