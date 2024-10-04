@@ -24,7 +24,7 @@ function calculateSum()
     }
 
     console.log(sum);
-    document.getElementById("output").innerText = "Result: " + sum;
+    document.getElementById("output").innerText = "Sum of all the multiples of " + a + " or " + b + " below " + n + " is " + sum;
 
     document.getElementById("inputForm").style.display="none";
 }
