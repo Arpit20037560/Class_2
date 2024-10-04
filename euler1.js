@@ -16,9 +16,11 @@ let inputText3 = document.getElementById("userInput3").value;
 
 
 let a = Number(inputText1);
-let list =  inputText2.split(',').map(num => parseInt(num.trim(),10));
 
-let b = Number(inputText3);
+
+let b = Number(inputText2);
+
+let list =  inputText3.split(',').map(num => parseInt(num.trim(),10));
 
 
 const result = sum(a,list,b);
