@@ -32,4 +32,4 @@ let basketCost = (basket, prices) => {
 
     return totalCost
 }
-alert(basketCost(basket, prices));
+alert(basketCost(basket, prices,totalCost));
