@@ -25,43 +25,8 @@
 
     <h3 id="output"></h3>
 
-    <script>
-        alert("Loaded Basket JS");
-
-        function calculateSum() {
-            const inputText1 = document.getElementById("userInput1").value;
-            const inputText2 = document.getElementById("userInput2").value;
-
-            // Split the input strings and create the basket and prices objects
-            const products = inputText1.split(',').map(item => item.trim());
-            const pricesList = inputText2.split(',').map(item => parseFloat(item.trim()));
-
-            const basket = {};
-            const prices = {};
-
-            products.forEach((product, index) => {
-                basket[product] = Math.floor(Math.random() * 10) + 1; 
-            });
-
-            products.forEach((product, index) => {
-                prices[product] = pricesList[index] || 0; 
-            });
-
-            const result = basketCost(basket, prices);
-            document.getElementById("output").innerText = "Basket Cost is " + result;
-        }
-
-        const basketCost = (basket, prices) => {
-            let totalCost = 0;
-
-            for (let product in basket) {
-                if (prices[product]) {
-                    totalCost += basket[product] * prices[product];
-                }
-            }
-
-            return totalCost;
-        }
+    <script src="basket.js">
+       
     </script>
 </body>
 </html>

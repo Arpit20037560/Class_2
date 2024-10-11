@@ -8,34 +8,26 @@ and prices is a mapping from products(String) to prices (number)
 and returns the total cost of the basket
 */
 
-function calculateSum() 
-{
+let basket = {'Milk': 2,'Bread': 1, "Tea":1}
+let prices = {
+    'Bread': 1.99,
+    'Cheese': 2.99,
+    'Milk': 1.99,
+    'Tea':3.99
+};
 
-let inputText1 = document.getElementById("userInput1").value;
-
-let inputText2 = document.getElementById("userInput2").value;
-
-
-let baskets = inputText1.split(',').map(num => parseInt(num.trim(),10));
-
-
-let prices = inputText2.split(',').map(num => parseInt(num.trim(),10));
-
-
-
-const result = basketCost(a,list,b);
-
-document.getElementById("output").innerText = "Basket Cost is " + result;
-
-}
+basketCost(basket,prices)
 
 let basketCost = (basket, prices) => {
     let totalCost = 0;
 
-    for (let product in basket) {
-        if (prices[product]) { 
-            totalCost += basket[product] * prices[product]; 
+    for (let product in basket) 
+    {
+        if(prices[product])
+        {
+            totalCost+= basket[product] * prices[product];
         }
+        
     }
 
     return totalCost
