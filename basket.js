@@ -16,7 +16,7 @@ let prices = {
     'Tea':3.99
 };
 
-basketCost(basket,prices)
+
 
 let basketCost = (basket, prices) => {
     let totalCost = 0;
@@ -32,4 +32,4 @@ let basketCost = (basket, prices) => {
 
     return totalCost
 }
-alert(basketCost(basket, prices,totalCost));
+alert(basketCost(basket,prices));
