@@ -18,18 +18,19 @@ let prices = {
 
 
 
-let basketCost = (basket, prices) => {
-    let totalCost = 0;
+let basketPrices = (basket,prices) =>
+{
+    let price =0;
 
-    for (let product in basket) 
+    for(let product in basket)
     {
-        if(prices[product])
+        if(prices.product!=null)
         {
-            totalCost+= basket[product] * prices[product];
+            price += basket.product * prices.product ;
         }
-        
     }
-
-    return totalCost
 }
-alert(basketCost(basket,prices));
+
+
+
+alert(basketPrices(basket,prices));
