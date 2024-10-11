@@ -29,6 +29,7 @@ let basketPrices = (basket,prices) =>
             price += basket.product * prices.product ;
         }
     }
+    console.log("New Price is"+price);
 }
 
 
