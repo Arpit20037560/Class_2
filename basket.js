@@ -24,9 +24,9 @@ let basketPrices = (basket,prices) =>
 
     for(let product in basket)
     {
-        if(prices.product!=null)
+        if(prices[product]!=null)
         {
-            price += basket.product * prices.product ;
+            price += basket[product] * prices[product] ;
         }
     }
     console.log("New Price is"+price);
